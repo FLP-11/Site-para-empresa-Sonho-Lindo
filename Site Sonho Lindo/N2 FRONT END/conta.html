@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>conta</title>
+</head>
+<body>
+    
+<div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="#" width="125px" alt="">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="Inicio.html">Início</a></li>
+                            <li><a href="bebês.html">Bebês</a></li>
+                            <li><a href="meninas.html">Meninas</a></li>
+                            <li><a href="meninos.html">Meninos</a></li>
+                            <li><a href="conta.html">Conta</a></li>
+                        </ul>
+                    </nav>
+                   <a href="carrinho.html">
+                        <img src="img/Sacola de compra.png" width="30px" height="30px">
+                    </a>
+                </div>
+                
+        </div>
+<!---Pagina-conta--->
+
+<div class="paginaconta">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/modelo_3-removebg-preview.png" width="100%">
+
+            </div>
+
+             <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="registrar()">Registrar</span>
+                        <hr id="Indicador">
+                    </div>
+
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Nome do usuário">
+                        <input type="password" placeholder="Senha">
+                        <button type="submit" class="btn"> Login </button>
+                        <a href="">Esqueci a senha</a>
+                    </form>
+
+                     <form id="RegForm">
+                        <input type="text" placeholder="Nome do usuário">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Senha">
+                        <button type="submit" class="btn"> Login </button>
+                        <a href="">Esqueci a senha</a>
+                    </form>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+    
+
+  <!-----Rodapé----->
+
+   <div class="footer">
+    <div class="container">
+        <div class="row">
+           <div class="footer-col-2">
+            <img src="#" alt="LOGO">
+            <p>frase da marca</p>
+           </div>
+
+
+           <div class="footer-col-3">
+            <h3>Dúvidas</h3>
+            <ul>
+                <li> <a href="trocas-e-devolucoes.html">Trocas e Devoluções</a></li>
+                <li><a href="duvidas-frequentes.html">Perguntas frequentes</a></li>
+            </ul>
+           </div>
+
+           <div class="footer-col-4">
+            <h3>Central de atendimento</h3>
+            <ul>
+                <li>Horário de funcionamento: <br> seg a sexta 9:00 às 17:00. <br> Sábado 9:00 às 14:00.</li>
+                <li> <br> Telefone: <br> (61) 98402-1266 </li>
+            </ul>
+
+           </div>
+
+
+
+
+
+
+           <div class="footer-col-5">
+            <h3>Redes sociais</h3>
+            <nav>
+                <ul>
+                <li><a href="https://www.instagram.com/sonholindoloja/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/sonholindoGuara/?locale=pt_BR" target="_blank">Facebook</a></li>
+            </ul>
+            </nav>
+              
+            
+
+           </div>
+
+
+        </div>
+        <hr>
+        <p class="criadores">Alicia Passo & Felipe Aguiar | UCB | 2026</p>
+    </div>
+
+   </div>
+
+   
+   
+
+
+<!----Java Script para parte de form---->
+
+<script>
+
+var LoginForm = document.getElementById("LoginForm")
+var RegForm = document.getElementById("RegForm")
+var indicador = document.getElementById("Indicador")
+
+    function registrar(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicador.style.transform = "translateX(100px)";
+    
+}
+
+ function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicador.style.transform = "translateX(0px)";
+    
+}
+
+
+</script>
+
+</body>
+</html>
